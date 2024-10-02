@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background-color: #e67a0f;
+    position: absolute;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+.part {
+    width: 100px;
+    height: 100px;
+    background-color: #caa510;
+    position: absolute;
+    opacity: 1;
+    transition: all 4s ease;
+    /* Geçiş efekti (opacity ve transform için) */
+    /* transition: transform 2s ease, opacity 2s ease; */
+}
+
+.part1 {
+    top: 0;
+    left: 0;
+}
+
+.part2 {
+    top: 0;
+    right: 0;
+}
+
+.part3 {
+    bottom: 0;
+    left: 0;
+}
+
+.part4 {
+    bottom: 0;
+    right: 0;
+}
